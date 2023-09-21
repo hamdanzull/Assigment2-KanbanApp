@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+</head>
+
+<body>
+    <h1 class="title">Kanban App</h1>
+    <p class="subtitle">Buat harimu lebih produktif 👀</p>
+    <div class="status-plan">
+        <div class="to-do">
+            <!-- <p class="label-status" style="--color: #FCCA46">To-Do</p> -->
+            <div class="card">
+                <div class="window-controls">
+                    <img src="Assets/window-controls.svg" />
+                </div>
+                <div class="label">To-Do</div>
+                <div class="list">
+                    <ul id="todo-list">
+                        <li id="example" data-id="example" style="">
+                            <img src="Assets/grip-dots.svg">
+                            <p>(Example plan)</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <form id="add-plan-form" style="display: none;">
+                        <input type="text" id="plan-input" placeholder="Enter a plan...">
+                        <button class="button" type="submit">
+                            <img src="Assets/turn-down-left.svg">
+                        </button>
+                    </form>
+                </div>
+
+                <div class="action">
+                    <button class="add-plan" id="add-plan-button">
+                        <img src="Assets/ciecle-plus.svg">
+                        Add new plan
+                    </button>
+                    <div class="delete">
+                        <img src="Assets/trash.svg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="doing">
+            <!-- <p class="label-status" style="--color: #FE7F2D">Doing</p> -->
+            <div class="card">
+                <div class="window-controls">
+                    <img src="Assets/window-controls.svg" />
+                </div>
+                <div class="label">Doing</div>
+                <div class="list">
+                    <ul id="doing-list">
+                        <li id="example" data-id="example" style="">
+                            <img src="Assets/grip-dots.svg">
+                            <p>Edit video ⏰</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="done">
+            <!-- <p class="label-status" style="--color: #619B8A">Done</p> -->
+            <div class="card">
+                <div class="window-controls">
+                    <img src="Assets/window-controls.svg" />
+                </div>
+                <div class="label">Done</div>
+                <div class="list">
+                    <ul id="done-list">
+                        <li id="example" data-id="example" style="">
+                            <img src="Assets/grip-dots.svg">
+                            <p>Design a website 💻</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
